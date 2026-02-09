@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+ <div class="conteiner">
+<header class="content">
+            <div class="card__header">
+                <div>
+                     <h2 class="title">Крем для лица</h2>
+                     <h1 class="title_header">Увлажняющий</h1>
+                </div>
+                 <div class="icon"> iiii </div>
+            </div>
+        <!-- Progress Bar -->
+        <div class="header__conteiner">
+            <div class="header__content">
+                <span class="text">Дневной прогресс</span>
+                <span id="progress-text" class="text__header">Выполнено 1/2</span>
+            </div>
+            <div class="overflow-hidden"> 
+                <div  id="progress-bar"  class="header__progress"></div>
+            </div>
+        </div>
+         
+    </header>
+
+      <!-- Main Content (Scrollable) -->
+       <main class="products">
+         <div class="mb-8">
+            <button id="btn-random" class="btn">
+                <div class="main__products">
+                    <div class="main__prods">
+                        <span class="main__title">Красота</span>
+                        <span class="main__text">Для Здоровой кожи лица 2026 ✨</span>
+                    </div>
+                    <div class="main__produc">
+                        <svg class="main_SV"  fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" class="main__PTH">
+                </path>
+              </svg>
+                    </div>
+                </div>
+            </button>
+         </div>
+         
+          <form class="relative mb-6 group" id="deed-form">
+        <input type="text" id="input-deed" placeholder="Добавить своё заказ..."
+          class="input__custom">
+        <button type="submit" id="btn-add"
+          class="action-buttons">
+          <svg   fill="none" stroke="currentColor" viewBox="0 0 24 24" class="icon__custom" >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" class="svg__path"></path>
+          </svg>
+        </button>
+      </form>
+      <div id="deeds-list" class="space-y-1 pb-10">
+        <!-- Дела будут вставлены сюда через JS -->
+      </div>
+       </main>
+ </div>
+    <script src="index.js"></script>
+</body>
+</html>
